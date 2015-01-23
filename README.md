@@ -56,6 +56,7 @@ Summary
 Instructions
 ------------
 * Clone repo to your local dev machine using **git clone https://github.com/bilalnaeem/park_bench.git**.
+* This project was build using PostgreSQL but if you want to change to some other db, it should still work, just update Gemfile to use related gem.
 * Install RVM.
 * Install ruby 2.0.0 using **rmv install 2.0.0**.
 * Create gemset using **rvm use 2.0.0@park-bench --create**.
