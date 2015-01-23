@@ -52,3 +52,18 @@ Summary
 * unirest has been used for making API calls and stored the response inside the database.
 * Have used will_paginate gem for pagination.
 * Feature tests have been written for user login, sign up and for searching number fact.
+
+Instructions
+------------
+* Clone repo to your local dev machine using git clone https://github.com/bilalnaeem/park_bench.git
+* Install RVM.
+* Install ruby 2.0.0 using rmv install 2.0.0
+* Create gemset using rvm use 2.0.0@park-bench --create
+* Install bundler gem using gem install bundler.
+* Run bundle install.
+* Update database.yml according to your db credentials.
+* Create development db using rake db:setup
+* Create test db using RAILS_ENV=test rake db:setup
+* You should have phantomjs setup on your system this is required to run feature tests (using command rspec ./spec) but if you dont have you can run tests via selenium by using command rspec ./spec -t visual
+* Run server using rails s
+* If everything goes smooth you should be able to visit app at http://localhost:3000 in your browser.
