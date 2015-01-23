@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="large-12 columns">
+    <div class="panel">
+      <h1>Facts for number <%= number %></h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!-- Main Feed -->
+  <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+  <div class="large-12 columns">
+    <% if facts.length > 1 %>
+        <% facts.each do |fact| %>
+        <!-- Start Number Fact -->
+        <div class="row">
+          <div class="large-12 columns">
+            <p><%= fact.capitalize %>.</p>
+          </div>
+        </div>
+        <!-- End Number Fact -->
+        <% end %>
+    <% else %>
+        <div class="row">
+          <div class="large-12 columns">
+            <h3>No facts found please try again some other number.</h3>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>
+<div class="panel">
+  <%= will_paginate facts %>
+</div>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= content_for?(:title) ? yield(:title) + ' | Number Facts' : 'Number Facts' %></title>
+
+  <%= stylesheet_link_tag    "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54c0ca1d1e869471" async="async"></script>
+<%= render 'layouts/header' %>
+
+<div class="row">
+  <div class="large-12 columns"><%= yield %></div>
+</div>
+
+<%= render 'layouts/footer' %>
+
+<%= javascript_include_tag "application" %>
+</body>
+</html>

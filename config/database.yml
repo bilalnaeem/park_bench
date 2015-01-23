@@ -1,0 +1,20 @@
+development:
+  adapter: postgresql
+  database: number_facts_dev
+  username: root
+  password: root
+  host: localhost
+
+test:
+  adapter: postgresql
+  database: number_facts_test
+  username: root
+  password: root
+  host: localhost
+
+production:
+  adapter: postgresql
+  database: number_facts_prod
+  username: postgres
+  password: postgres
+  host: localhost
