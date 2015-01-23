@@ -3,8 +3,8 @@ Park Bench
 Consume data from [Numbers API](http://numbersapi.com). We are not directly consuming this API we are
 consuming this via [Mashape](http://mashape.com).
 
-OVERVIEW
---------
+PROBLEM OVERVIEW
+----------------
 Create your project in a public repository on github.com, and invite Park Bench developers as collaborators on
 that repository. Your changes should be committed to the 'develop' branch and pull requests should be opened on
 the repository's master branch.
