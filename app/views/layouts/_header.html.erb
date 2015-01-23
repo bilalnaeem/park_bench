@@ -1,0 +1,30 @@
+<div class="contain-to-grid">
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1><%= link_to "Number Facts", root_path %></a></h1>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right">
+        <% if user_signed_in? %>
+          <li class="divider"></li>
+          <li><%= link_to('Logout', destroy_user_session_path, :method => :delete, class: 'button alert') %></li>
+        <% else %>
+          <li class="divider"></li>
+          <li>
+            <%- if controller_name != 'sessions' %>
+              <%= link_to "Log in", new_session_path(:user), class: 'button' %>
+            <% end -%>
+          </li>
+
+          <li>
+            <%- if controller_name != 'registrations' %>
+              <%= link_to "Sign up", new_registration_path(:user), class: 'button success' %>
+            <% end -%>
+          </li>
+        <% end %>
+      </ul>
+    </section>
+  </nav>
+</div>

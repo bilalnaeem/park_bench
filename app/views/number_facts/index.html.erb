@@ -1,0 +1,16 @@
+<% title 'Get to know numbers more'  %>
+<h1>Enter a number or year to get facts</h1>
+
+<%= form_tag(number_facts_path, remote: true, format: :json, method: :get) do %>
+
+    <div class="field">
+      <%= text_field_tag :number %>
+    </div>
+    <div class="actions">
+      <%= submit_tag 'Get random facts' %>
+    </div>
+<% end %>
+
+<div class="fact-grid" id="fact_grid">
+
+</div>

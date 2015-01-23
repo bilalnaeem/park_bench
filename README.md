@@ -1,2 +1,2 @@
 # park_bench
-Consume numbersapi.com
+Consume data from Numbers API (numbersapi.com)
